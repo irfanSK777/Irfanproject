@@ -1,0 +1,20 @@
+{% extends 'Base.html' %}
+<style>
+    table {
+        border-style: solid;
+    }
+</style>
+
+<body>
+    {% block left %}
+        <p>VCube software solutions</p>
+        <p>we are providing corporate training</p>
+    {% endblock left %}
+
+    {% block right %}
+        {% for m in messages %}
+            <p>{{m}}</p>
+        {% endfor %}
+    {% endblock right %}
+    
+</body>
